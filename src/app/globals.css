@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-background: #0a0a0b;
+  --color-surface: #141416;
+  --color-surface-elevated: #1c1c1f;
+  --color-border: #2a2a2e;
+  --color-muted: #a1a1aa;
+  --color-foreground: #fafafa;
+  --color-accent: #f59e0b;
+  --color-accent-soft: #fbbf24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-accent) 35%, transparent);
+  color: var(--color-foreground);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--color-foreground) 0%,
+    var(--color-accent-soft) 55%,
+    var(--color-accent) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--color-border) 40%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-border) 40%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 20%, transparent 75%);
+}
+
+.glow-orb {
+  background: radial-gradient(
+    circle at center,
+    color-mix(in oklab, var(--color-accent) 22%, transparent),
+    transparent 70%
+  );
+}
