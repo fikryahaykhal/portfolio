@@ -30,9 +30,9 @@ export const siteConfig = {
       title: "Batik Commerce Platform",
       description:
         "Full-stack marketplace for batik artisans with catalog browsing, cart, and admin dashboards.",
-      tags: ["Next.js", "Node.js", "PostgreSQL"],
-      href: "#",
-      github: "#",
+      tags: ["React.js", "Node.js", "PostgreSQL"],
+      href: "https://batik-fe.vercel.app",
+      github: "https://github.com/fikryahaykhal",
     },
     {
       title: "Vault Finance App",
