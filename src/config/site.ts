@@ -41,15 +41,7 @@ export const siteConfig = {
       tags: ["Flutter", "REST API", "TypeScript"],
       href: "#",
       github: "#",
-    },
-    {
-      title: "Portfolio & Brand Site",
-      description:
-        "Fast, accessible marketing site with animated sections and optimized Core Web Vitals.",
-      tags: ["Next.js", "Tailwind", "Vercel"],
-      href: "#",
-      github: "#",
-    },
+    }
   ],
   about: [
     "I'm a developer who cares about craft — clean code, clear UX, and products that feel fast and intentional.",
